@@ -102,7 +102,6 @@ pteroca:
     change_password: 'पासवर्ड बदलें'
     change_password_subtitle: 'रीसेट करने के लिए अपना नया पासवर्ड दर्ज करें'
     success_password_changed: 'आपका पासवर्ड सफलतापूर्वक बदल दिया गया है।'
-    plugin_validation_failed: 'पासवर्ड रीसेट सुरक्षा प्लगइन द्वारा अवरुद्ध किया गया था। कृपया सहायता से संपर्क करें।'
     back_to_login: 'लॉगिन पर वापस जाएं'
 
   dashboard:
@@ -243,7 +242,6 @@ pteroca:
     no_eggs_available: 'कोई सर्वर सॉफ़्टवेयर विकल्प उपलब्ध नहीं'
     product_unavailable_title: 'उत्पाद अस्थायी रूप से अनुपलब्ध'
     auto_renewal_not_allowed: 'इस उत्पाद के लिए ऑटो-रिन्यूअल उपलब्ध नहीं है।'
-    insufficient_balance: 'अपर्याप्त शेष'
   cart_configuration:
     title: 'अपने सर्वर को कॉन्फ़िगर करें'
     configuration: 'कॉन्फ़िगरेशन'
@@ -645,11 +643,6 @@ pteroca:
     plugin_enabled: 'प्लगइन सक्षम'
     plugin_disabled: 'प्लगइन अक्षम'
     plugin_faulted: 'प्लगइन विफल'
-    plugin_deleted: 'प्लगइन हटाया गया'
-    plugin_uploaded: 'प्लगइन अपलोड किया गया'
-    admin_create_server: 'सर्वर बनाया गया (एडमिन)'
-    admin_create_free_server: 'मुफ्त सर्वर बनाया गया (एडमिन)'
-    user_api_key_regenerated: 'API कुंजी पुनर्जीवित'
 
   server_actions:
     change_details: 'सर्वर विवरण बदला गया'
@@ -905,20 +898,6 @@ pteroca:
       plugin_reset_successfully: 'प्लगइन "%s" सफलतापूर्वक रीसेट किया गया है। अब आप इसे फिर से सक्षम करने का प्रयास कर सकते हैं।'
       failed_to_reset_plugin: 'प्लगइन रीसेट करने में विफल: %s'
       plugin_not_faulted: 'प्लगइन "%s" दोष स्थिति में नहीं है। रीसेट की आवश्यकता नहीं।'
-      delete: 'हटाएं'
-      delete_plugin: 'प्लगइन हटाएं'
-      delete_plugin_title: 'प्लगइन हटाएं'
-      delete_confirmation_message: 'क्या आप वाकई इस प्लगइन को स्थायी रूप से हटाना चाहते हैं?'
-      this_will_delete: 'यह हटाएगा'
-      database_record: 'डेटाबेस रिकॉर्ड और प्लगइन स्थिति'
-      all_plugin_settings: 'सभी प्लगइन सेटिंग्स और कॉन्फ़िगरेशन'
-      filesystem_files: '/plugins/{name}/ निर्देशिका से सभी प्लगइन फ़ाइलें'
-      this_action_cannot_be_undone: 'यह कार्रवाई वापस नहीं की जा सकती!'
-      plugin_deleted_successfully: 'प्लगइन "%s" सफलतापूर्वक हटा दिया गया है।'
-      failed_to_delete_plugin: 'प्लगइन हटाने में विफल: %s'
-      warning: 'चेतावनी'
-      cancel: 'रद्द करें'
-      close: 'बंद करें'
     server:
       pterodactyl_server_id: 'Pterodactyl सर्वर आईडी'
       pterodactyl_server_identifier: 'Pterodactyl पहचानकर्ता'
@@ -951,9 +930,6 @@ pteroca:
       details_updated_successfully: 'सर्वर विवरण सफलतापूर्वक अपडेट किए गए हैं.'
       details_update_error: 'सर्वर विवरण को अपडेट करते समय त्रुटि हुई.'
       deleted_at: 'हटाने की तारीख'
-      create_server: 'सर्वर बनाएं'
-      pterodactyl_creation_failed: 'Pterodactyl पर सर्वर बनाने में विफल'
-      base_product: 'आधार उत्पाद'
       deleted_successfully: 'सर्वर सफलतापूर्वक हटाया गया।'
       delete_error: 'सर्वर हटाने में त्रुटि हुई: %error%'
     setting:
@@ -1081,27 +1057,6 @@ pteroca:
       create_error: 'उपयोगकर्ता बनाने में त्रुटि हुई: %error%'
       update_error: 'उपयोगकर्ता अपडेट करने में त्रुटि हुई: %error%'
       delete_error: 'उपयोगकर्ता हटाने में त्रुटि हुई: %error%'
-      pterodactyl_api_key: 'प्टेरोडैक्टिल एपीआई कुंजी'
-      pterodactyl_api_key_help: 'प्टेरोडैक्टिल पैनल के साथ प्रमाणीकरण के लिए उपयोग की जाने वाली एपीआई कुंजी। उपयोगकर्ता निर्माण के दौरान स्वचालित रूप से उत्पन्न। यदि खतरे में है तो पुनर्जनित किया जा सकता है।'
-      api_key_not_generated: 'एपीआई कुंजी अभी तक उत्पन्न नहीं हुई'
-      show_api_key: 'एपीआई कुंजी दिखाएं'
-      hide_api_key: 'एपीआई कुंजी छिपाएं'
-      regenerate_api_key: 'एपीआई कुंजी पुनर्जनित करें'
-      loading: 'लोड हो रहा है...'
-      api_key_visibility_not_available: 'पूर्ण एपीआई कुंजी प्रदर्शन के लिए उपलब्ध नहीं है। नई कुंजी देखने के लिए पुनर्जनित करें।'
-      api_key_regenerated_successfully: 'एपीआई कुंजी सफलतापूर्वक पुनर्जनित हुई।'
-      api_key_generation_failed: 'नई एपीआई कुंजी उत्पन्न करने में विफल। कृपया प्टेरोडैक्टिल कनेक्शन जांचें।'
-      api_key_regeneration_error: 'एपीआई कुंजी पुनर्जनित करते समय एक त्रुटि हुई: %error%'
-      invalid_user: 'अमान्य उपयोगकर्ता।'
-      regenerate_api_key_modal:
-        title: 'प्टेरोडैक्टिल एपीआई कुंजी पुनर्जनित करें'
-        warning: 'चेतावनी: यह कार्य वर्तमान एपीआई कुंजी को अमान्य कर देगा!'
-        description: 'क्या आप वाकई इस उपयोगकर्ता की प्टेरोडैक्टिल एपीआई कुंजी पुनर्जनित करना चाहते हैं?'
-        consequence_1: 'वर्तमान एपीआई कुंजी तुरंत काम करना बंद कर देगी'
-        consequence_2: 'एक नई एपीआई कुंजी उत्पन्न और स्वचालित रूप से सहेजी जाएगी'
-        consequence_3: 'पुरानी एपीआई कुंजी प्टेरोडैक्टिल से हटा दी जाएगी'
-        cancel: 'रद्द करें'
-        confirm: 'एपीआई कुंजी पुनर्जनित करें'
     role:
       name: 'नाम'
       name_help: 'आंतरिक भूमिका पहचानकर्ता (लोअरकेस, अल्फान्यूमेरिक, अंडरस्कोर केवल)। निर्माण के बाद बदला नहीं जा सकता।'
@@ -1439,15 +1394,6 @@ pteroca:
       up_to_date: 'अप टू डेट'
       update_available: 'अपडेट उपलब्ध'
       pteroca_plugin_not_detected: 'पता नहीं चला'
-    server_create:
-      select_user_help: 'उस उपयोगकर्ता का चयन करें जो इस सर्वर का मालिक होगा'
-      base_product_help: 'वैकल्पिक रूप से कॉन्फ़िगरेशन मानों को पूर्व-भरने के लिए एक उत्पाद टेम्प्लेट चुनें'
-      free_server: 'मुफ्त सर्वर (उपयोगकर्ता शेष से न काटें)'
-      free_server_help: 'उपयोगकर्ता शेष से काटे बिना सर्वर बनाने के लिए इसे सक्षम करें'
-      success: 'उपयोगकर्ता %user% के लिए सर्वर सफलतापूर्वक बनाया गया'
-      eggs_required: 'कम से कम एक अंडा चुना जाना चाहिए'
-      use_as_starting_egg: 'प्रारंभिक अंडे के रूप में उपयोग करें'
-      starting_egg_help: 'सर्वर बनाने के समय यह अंडा उपयोग किया जाएगा'
 
   first_configuration:
     title: "प्रथम विन्यास"

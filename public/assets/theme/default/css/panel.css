@@ -214,8 +214,7 @@
 
 .page-login-split {
     background: #ffffff !important;
-    overflow-x: hidden;
-    overflow-y: auto;
+    overflow: hidden;
     padding: 0 !important;
     margin: 0 !important;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
@@ -248,6 +247,7 @@
 
 .login-logo img {
     max-height: 100px;
+    filter: brightness(0) invert(1);
 }
 
 .login-brand-title {
@@ -360,12 +360,10 @@
 @media (max-width: 576px) {
     .login-split-left {
         padding: 1.5rem;
-        min-height: auto;
     }
 
     .login-split-right {
         padding: 1.5rem;
-        min-height: auto;
     }
 
     .login-brand-title {
@@ -375,18 +373,6 @@
     .login-logo img {
         max-height: 70px;
     }
-
-    .login-logo {
-        margin-bottom: 1.5rem;
-    }
-
-    .login-brand-subtitle {
-        margin-bottom: 1.5rem;
-    }
-
-    .login-features {
-        gap: 1rem;
-    }
 }
 
 body.page-login-split #flash-messages {
@@ -395,10 +381,6 @@ body.page-login-split #flash-messages {
 }
 
 /* Dark Mode */
-.ea-dark-scheme.page-login-split {
-    background: #0E1E2F !important;
-}
-
 .ea-dark-scheme.page-login-split .login-split-right {
     background: #0E1E2F !important;
 }
@@ -640,6 +622,7 @@ body.page-configurator::before {
 
 .configurator-logo img {
     max-height: 80px;
+    filter: brightness(0) invert(1);
 }
 
 .configurator-title {

@@ -102,7 +102,6 @@ pteroca:
     change_password: 'Changer le mot de passe'
     change_password_subtitle: 'Entrez votre nouveau mot de passe pour le réinitialiser'
     success_password_changed: 'Le mot de passe a été changé avec succès.'
-    plugin_validation_failed: 'La réinitialisation du mot de passe a été bloquée par un plugin de sécurité. Veuillez contacter le support.'
     back_to_login: 'Retour à la connexion'
 
   dashboard:
@@ -242,7 +241,6 @@ pteroca:
     no_eggs_available: 'Aucune option logicielle de serveur disponible'
     product_unavailable_title: 'Produit Temporairement Indisponible'
     auto_renewal_not_allowed: 'Le renouvellement automatique n''est pas disponible pour ce produit.'
-    insufficient_balance: 'Solde insuffisant'
   cart_configuration:
     title: 'Configurer votre serveur'
     configuration: 'Configuration'
@@ -644,11 +642,6 @@ pteroca:
     plugin_enabled: 'Plugin activé'
     plugin_disabled: 'Plugin désactivé'
     plugin_faulted: 'Plugin défaillant'
-    plugin_deleted: 'Plugin supprimé'
-    plugin_uploaded: 'Plugin téléchargé'
-    admin_create_server: 'Serveur créé (admin)'
-    admin_create_free_server: 'Serveur gratuit créé (admin)'
-    user_api_key_regenerated: 'Clé API régénérée'
 
   server_actions:
     change_details: 'Détails du serveur modifiés'
@@ -904,20 +897,6 @@ pteroca:
       plugin_reset_successfully: "Le plugin \"%s\" a été réinitialisé avec succès. Vous pouvez maintenant essayer de l'activer à nouveau."
       failed_to_reset_plugin: 'Échec de la réinitialisation du plugin : %s'
       plugin_not_faulted: "Le plugin \"%s\" n'est pas en état de panne. Aucune réinitialisation nécessaire."
-      delete: 'Supprimer'
-      delete_plugin: 'Supprimer le Plugin'
-      delete_plugin_title: 'Supprimer le Plugin'
-      delete_confirmation_message: 'Êtes-vous sûr de vouloir supprimer définitivement ce plugin ?'
-      this_will_delete: 'Cela supprimera'
-      database_record: 'Enregistrement de base de données et état du plugin'
-      all_plugin_settings: 'Tous les paramètres et configurations du plugin'
-      filesystem_files: 'Tous les fichiers du plugin du répertoire /plugins/{name}/'
-      this_action_cannot_be_undone: 'Cette action ne peut pas être annulée !'
-      plugin_deleted_successfully: 'Le plugin "%s" a été supprimé avec succès.'
-      failed_to_delete_plugin: 'Échec de la suppression du plugin : %s'
-      warning: 'Avertissement'
-      cancel: 'Annuler'
-      close: 'Fermer'
     server:
       pterodactyl_server_id: 'ID du serveur Pterodactyl'
       pterodactyl_server_identifier: 'Identifiant Pterodactyl'
@@ -950,9 +929,6 @@ pteroca:
       details_updated_successfully: 'Les détails du serveur ont été mis à jour avec succès.'
       details_update_error: 'Une erreur s''est produite lors de la mise à jour des détails du serveur.'
       deleted_at: 'Supprimé le'
-      create_server: 'Créer un Serveur'
-      pterodactyl_creation_failed: 'Échec de la création du serveur sur Pterodactyl'
-      base_product: 'Produit de Base'
       deleted_successfully: 'Serveur supprimé avec succès.'
       delete_error: 'Une erreur s''est produite lors de la suppression du serveur : %error%'
     setting:
@@ -1080,27 +1056,6 @@ pteroca:
       create_error: 'Une erreur s''est produite lors de la création de l''utilisateur : %error%'
       update_error: 'Une erreur s''est produite lors de la mise à jour de l''utilisateur : %error%'
       delete_error: 'Une erreur s''est produite lors de la suppression de l''utilisateur : %error%'
-      pterodactyl_api_key: 'Clé API Pterodactyl'
-      pterodactyl_api_key_help: 'Clé API utilisée pour s''authentifier avec le panneau Pterodactyl. Générée automatiquement lors de la création de l''utilisateur. Peut être régénérée si compromise.'
-      api_key_not_generated: 'Clé API pas encore générée'
-      show_api_key: 'Afficher la clé API'
-      hide_api_key: 'Masquer la clé API'
-      regenerate_api_key: 'Régénérer la clé API'
-      loading: 'Chargement...'
-      api_key_visibility_not_available: 'La clé API complète n''est pas disponible pour l''affichage. Régénérez pour voir la nouvelle clé.'
-      api_key_regenerated_successfully: 'Clé API régénérée avec succès.'
-      api_key_generation_failed: 'Échec de la génération de la nouvelle clé API. Veuillez vérifier la connexion Pterodactyl.'
-      api_key_regeneration_error: 'Une erreur s''est produite lors de la régénération de la clé API : %error%'
-      invalid_user: 'Utilisateur invalide.'
-      regenerate_api_key_modal:
-        title: 'Régénérer la clé API Pterodactyl'
-        warning: 'Attention : Cette action invalidera la clé API actuelle !'
-        description: 'Êtes-vous sûr de vouloir régénérer la clé API Pterodactyl de cet utilisateur ?'
-        consequence_1: 'La clé API actuelle cessera de fonctionner immédiatement'
-        consequence_2: 'Une nouvelle clé API sera générée et sauvegardée automatiquement'
-        consequence_3: 'L''ancienne clé API sera supprimée de Pterodactyl'
-        cancel: 'Annuler'
-        confirm: 'Régénérer la clé API'
     role:
       name: 'Nom'
       name_help: 'Identifiant de rôle interne (minuscules, alphanumérique, traits de soulignement uniquement). Ne peut pas être changé après la création.'
@@ -1438,15 +1393,6 @@ pteroca:
       up_to_date: 'À jour'
       update_available: 'Mise à jour disponible'
       pteroca_plugin_not_detected: 'Non détecté'
-    server_create:
-      select_user_help: "Sélectionnez l'utilisateur qui sera propriétaire de ce serveur"
-      base_product_help: 'Sélectionnez optionnellement un modèle de produit pour pré-remplir les valeurs de configuration'
-      free_server: 'Serveur gratuit (ne pas débiter le solde de l''utilisateur)'
-      free_server_help: 'Activez ceci pour créer un serveur sans déduire du solde de l''utilisateur'
-      success: 'Serveur créé avec succès pour l''utilisateur %user%'
-      eggs_required: 'Au moins un œuf doit être sélectionné'
-      use_as_starting_egg: 'Utiliser comme œuf de départ'
-      starting_egg_help: 'Cet œuf sera utilisé lors de la création du serveur'
 
   first_configuration:
     title: 'Première Configuration'

@@ -116,7 +116,6 @@ class ServerCrudController extends AbstractPanelController
     {
         $actions = $actions
             ->remove(Crud::PAGE_INDEX, Action::NEW)
-            ->add(Crud::PAGE_INDEX, $this->getCreateServerAction())
             ->update(
                 Crud::PAGE_INDEX,
                 Action::DELETE,
@@ -248,22 +247,5 @@ class ServerCrudController extends AbstractPanelController
 
             return true;
         });
-    }
-
-    private function getCreateServerAction(): Action
-    {
-        return Action::new('createServer', $this->translator->trans('pteroca.crud.server.create_server'))
-            ->setIcon('fa fa-plus')
-            ->linkToUrl(
-                fn () => $this->generateUrl(
-                    'panel',
-                    [
-                        'crudAction' => Action::NEW,
-                        'crudControllerFqcn' => ServerProductCrudController::class,
-                    ]
-                )
-            )
-            ->createAsGlobalAction()
-            ->displayIf(fn() => $this->getUser()?->hasPermission(PermissionEnum::CREATE_SERVER));
     }
 }

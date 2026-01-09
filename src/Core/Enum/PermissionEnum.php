@@ -15,9 +15,8 @@ enum PermissionEnum: string
     case DELETE_USER = 'delete_user';
     case VIEW_USER = 'view_user';
 
-    // Server Management (10)
+    // Server Management (9)
     case ACCESS_SERVERS = 'access_servers';
-    case CREATE_SERVER = 'create_server';
     case EDIT_SERVER = 'edit_server';
     case DELETE_SERVER = 'delete_server';
     case VIEW_SERVER = 'view_server';
@@ -137,7 +136,6 @@ enum PermissionEnum: string
             ],
             'server_management' => [
                 self::ACCESS_SERVERS,
-                self::CREATE_SERVER,
                 self::EDIT_SERVER,
                 self::DELETE_SERVER,
                 self::VIEW_SERVER,

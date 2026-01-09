@@ -260,7 +260,7 @@ readonly class ComposerDependencyManager
      *
      * @return array<string, string>
      */
-    public function buildProcessEnvironment(): array
+    private function buildProcessEnvironment(): array
     {
         $env = [];
 

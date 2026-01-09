@@ -42,13 +42,12 @@ readonly class StoreService
                 $category->setImagePath( $imagePath . $category->getImagePath());
             }
             return $category;
-        }, $this->categoryRepository->findBy(['deletedAt' => null], ['priority' => 'ASC', 'name' => 'ASC']));
+        }, $this->categoryRepository->findBy([], ['priority' => 'ASC', 'name' => 'ASC']));
     }
 
     public function getCategory(int $categoryId): ?Category
     {
-        $category = $this->categoryRepository->find($categoryId);
-        return ($category && $category->getDeletedAt() === null) ? $category : null;
+        return $this->categoryRepository->find($categoryId);
     }
 
     public function getCategoryProducts(?Category $category = null): array
