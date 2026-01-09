@@ -37,4 +37,5 @@ jobs:
           context: .
           file: ./Dockerfile
           platforms: linux/amd64
+          push: true
           tags: ghcr.io/lingyu-ily/pteroca:${{ github.event.release.tag_name }}
